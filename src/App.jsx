@@ -8,25 +8,28 @@ import Portfolio from "./components/Portfolio"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
-function App() {
-
+export default function App() {
   return (
-    <div>
+    <div className="font-sans antialiased bg-slate-50"
+
+
+    >
+      {/* Fixed Navbar */}
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <DroneClub />
-      <Portfolio />
-      <Contact />
+
+      {/* Page Sections */}
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <DroneClub />
+        <Portfolio />
+        <Contact />
+      </main>
+
+      {/* Footer */}
       <Footer />
-
     </div>
-  )
+  );
 }
-
-
-
-export default App
-
 
