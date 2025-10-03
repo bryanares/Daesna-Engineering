@@ -3,26 +3,26 @@ import Container from "./utils/Container";
 
 export default function About() {
     return (
-        <section id="about" className="py-9 bg-white text-slate-800">
+        <section id="about" className="py-16 bg-white">
 
             <Container className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
 
                 {/* ===== Left: Text ===== */}
                 <div className="md:w-1/2">
-                    <h2 className="text-3xl font-bold text-center text-[#1E3A8A] relative inline-block">
+                    <h2 className="text-3xl font-bold text-center text-brand relative inline-block">
                         About Us
-                        <span className="block h-1 w-16 bg-blue-600 mx-auto mt-2 rounded"></span>
+                        <span className="block h-1 w-16 bg-brand-light mx-auto mt-2 rounded"></span>
                     </h2>
 
-                    <p className="mt-4 text-lg leading-relaxed">
-                        At <span className="font-semibold">Daesna Engineering</span>, we craft
-                        precision fibreglass solutions for aviation, automotive, and consumer needs.
-                    </p>
-                    <p className="mt-4 text-lg leading-relaxed">
-                        From custom fabrication to expert repairs, our mission is simple:
-                        <em>Reviving Wings, Crafting Dreams</em>.
+                    <p className="mt-4 text-lg leading-relaxed text-slate-700">
+                        At <span className="font-semibold text-brand">Daesna Engineering</span>,
+                        we craft precision fibreglass solutions for aviation, automotive, and consumer needs.
                     </p>
 
+                    <p className="mt-4 text-lg leading-relaxed text-slate-700">
+                        From custom fabrication to expert repairs, our mission is simple:
+                        <em className="text-brand"> Reviving Wings, Crafting Dreams</em>.
+                    </p>
                 </div>
 
                 {/* ===== Right: Placeholder Image/Illustration ===== */}

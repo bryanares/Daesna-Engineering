@@ -30,15 +30,15 @@ const SERVICES = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-20 bg-slate-50">
+        <section id="services" className="py-16 bg-slate-50">
             <Container>
                 {/* Section heading */}
-                <h2 className="text-3xl font-bold text-center text-[#1E3A8A] relative inline-block">
+                <h2 className="text-3xl font-bold text-center text-brand relative inline-block">
                     Our Services
-                    <span className="block h-1 w-16 bg-blue-600 mx-auto mt-2 rounded"></span>
+                    <span className="block h-1 w-16 bg-brand-light mx-auto mt-2 rounded"></span>
                 </h2>
 
-                <p className="mt-4 text-lg text-center text-slate-600 max-w-2xl mx-auto">
+                <p className="mt-4 text-lg text-center text-slate-700 max-w-2xl mx-auto">
                     We specialize in composite materials, delivering tailored solutions
                     in fibreglass fabrication, repair, and restoration.
                 </p>
@@ -51,24 +51,27 @@ export default function Services() {
                             className="p-6 rounded-xl bg-white shadow hover:shadow-md transition flex flex-col items-start"
                         >
                             {/* Placeholder icon */}
-                            <div className="h-12 w-12 flex items-center justify-center rounded-md bg-gradient-to-br from-blue-900 to-blue-500 text-white mb-4">
+                            <div className="h-12 w-12 flex items-center justify-center rounded-md bg-gradient-to-br from-brand to-brand-light text-white mb-4 transition-colors duration-300">
                                 <span className="font-bold text-lg">{service.title[0]}</span>
                             </div>
 
-                            <h3 className="text-xl font-semibold text-slate-800">
+                            <h3 className="text-xl font-semibold text-brand">
                                 {service.title}
                             </h3>
 
-                            <p className="mt-2 text-slate-600">{service.desc}</p>
-                            {/**CTA */}
-                            {/* <div className="mt-10 text-center">
-                                <a href="#contact" className="px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold hover:bg-blue-800 transition">
-                                    Request Service
-                                </a>
-                            </div> */}
-
+                            <p className="mt-2 text-slate-700">{service.desc}</p>
                         </div>
                     ))}
+                </div>
+
+                {/* Call to Action */}
+                <div className="mt-12 text-center">
+                    <a
+                        href="#contact"
+                        className="px-6 py-3 rounded-lg bg-brand text-white font-semibold hover:bg-brand-light transition-colors duration-300"
+                    >
+                        Request Service
+                    </a>
                 </div>
             </Container>
         </section>

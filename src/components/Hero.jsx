@@ -4,28 +4,22 @@ import Container from "./utils/Container";
 
 export default function Hero() {
     return (
-        // Section wrapper: id="home" so navbar links can jump here.
-        // pt-24 clears the fixed navbar (adjust if your navbar height changes).
         <section
             id="home"
-            className="pt-24 bg-gradient-to-r from-[#1E3A8A] to-[#3B82F6] text-white"
+            className="pt-24 bg-gradient-to-r from-brand to-brand-light text-white"
         >
-            {/* Container: constrain width, add horizontal padding, vertical padding.
-          py-20 gives breathing room above and below the hero content. */}
             <Container className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                {/* Layout: mobile = stacked (column-reverse so image sits above on very small screens if desired),
-            md+ = side-by-side row. gap-10 gives space between text and image. */}
                 <div className="flex flex-col-reverse md:flex-row items-center gap-10">
 
-                    {/* ========== Left: Text block ========== */}
-                    <div className="md:w-1/2">
+                    {/* ===== Left: Text block ===== */}
+                    <div className="md:w-1/2 text-center md:text-left">
                         {/* Headline */}
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
                             Reviving Wings, Crafting Dreams
                         </h1>
 
-                        {/* Subtext / elevator pitch — keep concise and scannable */}
-                        <p className="mt-4 text-lg max-w-xl opacity-95">
+                        {/* Subtext */}
+                        <p className="mt-4 text-lg max-w-xl mx-auto md:mx-0 opacity-95 text-slate-100">
                             From UAV engineering and composite fabrication to hands-on drone training and drone soccer — Daesna builds, repairs, and teaches with precision and care.
                         </p>
 
@@ -33,26 +27,23 @@ export default function Hero() {
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <a
                                 href="#services"
-                                className="px-6 py-3 rounded-lg bg-white text-blue-700 font-semibold hover:bg-slate-100 transition"
+                                className="px-6 py-3 rounded-lg bg-white text-brand font-semibold hover:bg-slate-100 transition-colors duration-300"
                             >
                                 Explore Services
                             </a>
                             <a
                                 href="#droneclub"
-                                className="px-6 py-3 rounded-lg bg-blue-900 text-white font-semibold hover:bg-blue-800 transition"
+                                className="px-6 py-3 rounded-lg bg-brand-dark text-white font-semibold hover:bg-brand transition-colors duration-300"
                             >
                                 Join Drone Club
                             </a>
                         </div>
-
                     </div>
 
-                    {/* ========== Right: Illustration / image block ========== */}
+                    {/* ===== Right: Image / Illustration block ===== */}
                     <div className="md:w-1/2 flex justify-center">
-                        {/* Card that holds the image/illustration placeholder */}
                         <div className="w-full max-w-md rounded-2xl bg-white/10 border border-white/20 p-6 flex items-center justify-center">
-
-                            {/* Inline SVG placeholder — replace with <img src={...} alt="..." /> when you add real art */}
+                            {/* Placeholder illustration */}
                             <svg
                                 role="img"
                                 aria-label="drone illustration placeholder"
@@ -76,7 +67,6 @@ export default function Hero() {
                                     Hero illustration (placeholder)
                                 </text>
                             </svg>
-
                         </div>
                     </div>
                 </div>

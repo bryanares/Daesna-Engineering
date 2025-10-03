@@ -11,8 +11,6 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <div className="font-sans antialiased bg-slate-50"
-
-
     >
       {/* Fixed Navbar */}
       <Navbar />
